@@ -1,0 +1,166 @@
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+
+====================  INITIAL STATE  ====================
+
+Here is the thread table...
+  0:  Thread "Thread 0"    status=UNUSED    (addr of Thread object: 0x00096BF4)
+  1:  Thread "Thread 1"    status=UNUSED    (addr of Thread object: 0x00097C38)
+  2:  Thread "Thread 2"    status=UNUSED    (addr of Thread object: 0x00098C7C)
+  3:  Thread "Thread 3"    status=UNUSED    (addr of Thread object: 0x00099CC0)
+  4:  Thread "Thread 4"    status=UNUSED    (addr of Thread object: 0x0009AD04)
+  5:  Thread "Thread 5"    status=UNUSED    (addr of Thread object: 0x0009BD48)
+  6:  Thread "Thread 6"    status=UNUSED    (addr of Thread object: 0x0009CD8C)
+  7:  Thread "Thread 7"    status=UNUSED    (addr of Thread object: 0x0009DDD0)
+  8:  Thread "Thread 8"    status=UNUSED    (addr of Thread object: 0x0009EE14)
+  9:  Thread "Thread 9"    status=UNUSED    (addr of Thread object: 0x0009FE58)
+Here is the FREE list of Threads:
+   0x00096BF4 0x00097C38 0x00098C7C 0x00099CC0 0x0009AD04 0x0009BD48 0x0009CD8C 0x0009DDD0 0x0009EE14 0x0009FE58 
+
+=========================================================
+
+
+
+*****  THREAD-MANAGER TEST  *****
+
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+56: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	IF CONDITION freeList.IsEmpty (HOARE): 
+...	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15.6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+175: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	IF CONDITION freeList.IsEmpty (HOARE): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	IF CONDITION freeList.IsEmpty (HOARE): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	IF CONDITION freeList.IsEmpty (HOARE): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	IF CONDITION freeList.IsEmpty (HOARE): 
+..20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8	IF CONDITION freeList.IsEmpty (HOARE): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+10...: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	IF CONDITION freeList.IsEmpty (HOARE): 
+..
+Kernel Error: Attempt to use a null pointer!  Type 'st' to see stack.
+Done!  The next instruction to execute will be:
+001078: C0100000       sethi   0x0000,r1	! 0x00001088 = 4232 (noGoMessage)
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> 
+*****  Control-C  *****
+
+*****  Control-C  *****

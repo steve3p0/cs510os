@@ -1,0 +1,1954 @@
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+Initializing Process Manager...
+Initializing Thread Manager...
+Initializing Frame Manager...
+
+====================  INITIAL STATE  ====================
+
+Here is the thread table...
+  0:  Thread "Thread 0"    status=UNUSED    (addr of Thread object: 0x00096BF4)
+  1:  Thread "Thread 1"    status=UNUSED    (addr of Thread object: 0x00097C38)
+  2:  Thread "Thread 2"    status=UNUSED    (addr of Thread object: 0x00098C7C)
+  3:  Thread "Thread 3"    status=UNUSED    (addr of Thread object: 0x00099CC0)
+  4:  Thread "Thread 4"    status=UNUSED    (addr of Thread object: 0x0009AD04)
+  5:  Thread "Thread 5"    status=UNUSED    (addr of Thread object: 0x0009BD48)
+  6:  Thread "Thread 6"    status=UNUSED    (addr of Thread object: 0x0009CD8C)
+  7:  Thread "Thread 7"    status=UNUSED    (addr of Thread object: 0x0009DDD0)
+  8:  Thread "Thread 8"    status=UNUSED    (addr of Thread object: 0x0009EE14)
+  9:  Thread "Thread 9"    status=UNUSED    (addr of Thread object: 0x0009FE58)
+Here is the FREE list of Threads:
+   0x00096BF4 0x00097C38 0x00098C7C 0x00099CC0 0x0009AD04 0x0009BD48 0x0009CD8C 0x0009DDD0 0x0009EE14 0x0009FE58 
+
+=========================================================
+
+
+
+*****  THREAD-MANAGER TEST  *****
+
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+56: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+...	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15.6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+175: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+...	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+...5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+...	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.517: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+13	WHILE LOOP - freeList.IsEmpty (MESA): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+..	Exiting Critical Section ThreadManager.GetANewThread(): 
+.5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 2
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+.18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 8.
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+5	WHILE LOOP - freeList.IsEmpty (MESA): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+14.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+...	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: .16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+Thread 0
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+....	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+14.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+12	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+13	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+....	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+3	GetANewThread: Thread 4
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+....7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+...1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.....6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+131: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+...2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 5
+1011	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.8	GetANewThread: Thread 8
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 3
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.13.19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+5..: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..1319: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+...4.	GetANewThread: Thread 3
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9	GetANewThread: Thread 0
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.17	GetANewThread: Thread 2
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+...	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+.8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 4
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	Exiting Critical Section ThreadManager.GetANewThread(): 
+.4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+520: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+119: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.3.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+717	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 78: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+12	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+.9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+.3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+...6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+..17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+513.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	Entering Critical section ThreadManager.GetANewThread(): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+9: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+12.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+3: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+10: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+4: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+6: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+18: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+5: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 0
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+..2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+8: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.1: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+918: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+.	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+15: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+2: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.13: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.7: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	WHILE LOOP - freeList.IsEmpty (MESA): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+12: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+.	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	WHILE LOOP - freeList.IsEmpty (MESA): 
+...20..: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+11: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.17: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 9
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 3
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..19: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 2
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 6
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 0
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+..1619: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 8
+: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 5
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.14: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 4
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.20: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 1
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+.16: Inside ThreadManager.GetANewThread(): 
+   	Entering Critical section ThreadManager.GetANewThread(): 
+	GetANewThread: Thread 7
+	Exiting Critical Section ThreadManager.GetANewThread(): 
+....
+
+***** THREAD-MANAGER TEST COMPLETED SUCCESSFULLY *****
+
+
+
+*****  PROCESS-MANAGER TEST  *****
+
+1ProcessManager.GetANewProcess: NOT IMPLEMENTED
+   
+Kernel Error: Attempt to use a null pointer!  Type 'st' to see stack.
+Done!  The next instruction to execute will be:
+001078: C0100000       sethi   0x0000,r1	! 0x00001088 = 4232 (noGoMessage)
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> 
+*****  Control-C  *****
+
+*****  Control-C  *****
